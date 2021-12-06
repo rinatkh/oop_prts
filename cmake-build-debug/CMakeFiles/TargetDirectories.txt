@@ -1,8 +1,0 @@
-/home/rinat/CLionProjects/hw_macaschov/oop_prts/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/rinat/CLionProjects/hw_macaschov/oop_prts/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/rinat/CLionProjects/hw_macaschov/oop_prts/cmake-build-debug/CMakeFiles/HW.dir
-/home/rinat/CLionProjects/hw_macaschov/oop_prts/cmake-build-debug/lib/CMakeFiles/rebuild_cache.dir
-/home/rinat/CLionProjects/hw_macaschov/oop_prts/cmake-build-debug/lib/CMakeFiles/edit_cache.dir
-/home/rinat/CLionProjects/hw_macaschov/oop_prts/cmake-build-debug/lib/task_1/CMakeFiles/rebuild_cache.dir
-/home/rinat/CLionProjects/hw_macaschov/oop_prts/cmake-build-debug/lib/task_1/CMakeFiles/edit_cache.dir
-/home/rinat/CLionProjects/hw_macaschov/oop_prts/cmake-build-debug/lib/task_1/CMakeFiles/parser.dir

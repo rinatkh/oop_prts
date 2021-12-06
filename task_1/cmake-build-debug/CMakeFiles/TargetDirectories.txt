@@ -1,3 +1,0 @@
-/home/rinat/CLionProjects/hw_macaschov/oop_prts/task_1/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/rinat/CLionProjects/hw_macaschov/oop_prts/task_1/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/rinat/CLionProjects/hw_macaschov/oop_prts/task_1/cmake-build-debug/CMakeFiles/HW.dir
