@@ -20,6 +20,7 @@ class DuoLinkedList {
 public:
 
     DuoLinkedList();
+
     ~DuoLinkedList();
 
     DuoLinkedList<T> &operator=(const DuoLinkedList<T> &) = delete;
@@ -44,6 +45,7 @@ private:
 
     size_t size = 0;
 };
+
 template<typename T>
 Node<T>::Node(const T &value, Node *next, Node *prev) : value(value), next(next), prev(prev) {}
 
@@ -64,10 +66,10 @@ DuoLinkedList<T>::~DuoLinkedList() {
 template<typename T>
 void DuoLinkedList<T>::push_back(const T &value) {
     if (size++ == 0) {
-        head = new Node<T>{value, nullptr, nullptr};
+        head = new Node<T>(value, nullptr, nullptr);
         tail = head;
     } else {
-        tail->next = new Node<T>{value, nullptr, tail};
+        tail->next = new Node<T>(value, nullptr, tail);
         tail = tail->next;
     }
 }
@@ -75,6 +77,9 @@ void DuoLinkedList<T>::push_back(const T &value) {
 template<typename T>
 void DuoLinkedList<T>::pop_back() {
     if (tail == nullptr) {
+        return;
+    }
+    if (size == 0) {
         return;
     }
     Node<T> *tmp = tail;
@@ -88,7 +93,7 @@ void DuoLinkedList<T>::pop_back() {
 
 template<typename T>
 void DuoLinkedList<T>::show() {
-    Node<T>* tmp;
+    Node<T> *tmp;
     tmp = head;
     while (tmp) {
         std::cout << tmp->value << std::endl;
@@ -96,10 +101,10 @@ void DuoLinkedList<T>::show() {
     }
 }
 
-template <typename T>
+template<typename T>
 Node<T> &DuoLinkedList<T>::operator[](size_t index) {
     int count = 0;
-    Node<T>* curr = head;
+    Node<T> *curr = head;
     while (curr) {
         if (count == index) {
             return curr;
@@ -112,10 +117,10 @@ Node<T> &DuoLinkedList<T>::operator[](size_t index) {
 
 template<typename T>
 void DuoLinkedList<T>::sort() {
-    Node<T>* left = head;
-    Node<T>* right = head->next;
+    Node<T> *left = head;
+    Node<T> *right = head->next;
 
-    auto* tmp = new Node<T>;
+    auto *tmp = new Node<T>;
     while (left->next) {
         while (right) {
             if ((left->value) > (right->value)) {
@@ -128,6 +133,7 @@ void DuoLinkedList<T>::sort() {
         left = left->next;
         right = left->next;
     }
+    delete tmp;
 }
 
 template<typename T>

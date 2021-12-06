@@ -13,7 +13,6 @@ void test() {
     list.pop_back();
     list.pop_back();
     list.pop_back();
-    list.pop_back();
 }
 
 int main() {
