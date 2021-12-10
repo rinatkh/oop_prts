@@ -20,7 +20,8 @@ swap_endian_float(const unsigned char *sting_of_data, size_t index, size_t size_
 }
 
 Parser::Parser(const unsigned char *input_data, size_t size_of_input_data) : data_(input_data),
-                                                                             size_data_(size_of_input_data) {
+                                                                             size_data_(size_of_input_data),
+                                                                             transfer_data_(){
     for (size_t i = 0; i < size_data_; ++i) {
         switch (int(input_data[i])) {
             case kHeading: {
